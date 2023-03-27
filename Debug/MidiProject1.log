@@ -1,3 +1,4 @@
 ﻿  main.cpp
+c:\users\ficti\documents\visual studio 2015\projects\midiproject1\midiproject1\main.cpp(28): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   MidiProject1.vcxproj -> c:\users\ficti\documents\visual studio 2015\Projects\MidiProject1\Debug\MidiProject1.exe
   MidiProject1.vcxproj -> c:\users\ficti\documents\visual studio 2015\Projects\MidiProject1\Debug\MidiProject1.pdb (Partial PDB)

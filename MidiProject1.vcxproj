@@ -75,11 +75,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>__WINDOWS_MM__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Libraries\rtmidi-5.0.0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Libraries\rtmidi-5.0.0;C:\Users\ficti\Documents\Libs\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>D:\Libraries\rtmidi-5.0.0\bin\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>rtmidi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Libraries\rtmidi-5.0.0\bin\Debug;C:\Users\ficti\Documents\Libs\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>rtmidi.lib;sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -116,7 +116,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="KeyInput.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MIDIKeyboard.cpp" />
+    <ClCompile Include="MyWindow.cpp" />
+    <ClCompile Include="Note.cpp" />
+    <ClCompile Include="ScaleManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MIDIKeyboard.h" />
+    <ClInclude Include="KeyInput.h" />
+    <ClInclude Include="MyWindow.h" />
+    <ClInclude Include="Note.h" />
+    <ClInclude Include="ScaleManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
